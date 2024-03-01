@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{data.titulo}}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>{{data.bienvenida}}</h1>
+    <div style="margin-left: 20px">
+      <h2>Students:</h2>
+      <p>Student1: Alejandro Martínez Henández</p>
+      <p>Student2: Susana María Álvarez</p>
+    </div>
+
+    <div style="max-width: 1500px; margin: 20px auto">
+      <h2>The Shoemaker And The Devil by Anton Chekhov</h2>
+      <p>{{ data.tale_content }}</p>
+    </div>
+
+    <form action="/" method="post" id="qaForm">
+      <label for="question"><h2>1. Ask a Question:</h2></label>
+      <!-- Set the value attribute to pre-fill the textbox -->
+      <input
+        type="text"
+        id="question"
+        name="question"
+        value="What is the Shoemaker's name?"
+        required
+      />
+
+      <label for="model"><h2>2. Select Model:</h2></label>
+      <select id="model" name="model">
+        <option value="deepset/roberta-base-squad2">
+          deepset/roberta-base-squad2
+        </option>
+        <option value="sentence-transformers/all-MiniLM-L6-v2">
+          sentence-transformers/all-MiniLM-L6-v2
+        </option>
+      </select>
+
+      <button type="submit">Get Answer</button>
+    </form>
+
+    {% if data.answer %}
+    <h2>Answer:</h2>
+    <p>{{ data.answer }}</p>
+    {% endif %}
+
+    <script>
+      // Retrieve the last selected model from local storage
+      const lastSelectedModel = localStorage.getItem("lastSelectedModel");
+      if (lastSelectedModel) {
+        document.getElementById("model").value = lastSelectedModel;
+      }
+
+      // Add an event listener to the form to store the selected model in local storage
+      document.getElementById("qaForm").addEventListener("submit", function () {
+        const selectedModel = document.getElementById("model").value;
+        localStorage.setItem("lastSelectedModel", selectedModel);
+      });
+    </script>
+  </body>
+</html>
