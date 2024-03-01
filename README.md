@@ -63,6 +63,8 @@ You can install them manually or use the provided requirements.txt file.
   * requirements.txt file contains necessary dependencies for execution.
 
 ## Application Instructions
+
+
 When the application is run, the following interface will appear:
   ![imagen](https://github.com/SusanaAlvarezC/ML2-Lab3-/assets/22481634/981ed985-75fd-4827-89e0-01728031af68)
   ![imagen](https://github.com/SusanaAlvarezC/ML2-Lab3-/assets/22481634/62a66057-1d27-4d19-94f4-b919b3fb9a58)
