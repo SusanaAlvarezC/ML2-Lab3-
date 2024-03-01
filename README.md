@@ -13,8 +13,13 @@
 
 ---
 
-**This project aims to fulfill point 5: "Bonus points if deployed on a local or cloud server."** 
-Unfortunately, we encountered difficulties uploading it to a cloud server because the application exceeded the 500 MB limit. We attempted to deploy it on both Heroku and PythonAnywhere.
+**This project resolves Laboratory 3 for the Machine Learning 2 course.**
+
+Please refer to the Lab3_SA_AM.ipynb notebook to view the results for points 1 to 4 of the lab.
+
+The next instruction addresses point 5: "Bonus points if deployed on a local or cloud server."
+Unfortunately, we faced challenges uploading it to a cloud server due to the application exceeding the 500 MB limit. We attempted deployment on both Heroku and PythonAnywhere.
+
 
 ## Prerequisites
 
