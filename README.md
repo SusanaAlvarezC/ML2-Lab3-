@@ -61,7 +61,17 @@ You can install them manually or use the provided requirements.txt file.
   * templates: Contains HTML files, such as index.html.
   * static: Contains static files, such as styles.css.
   * requirements.txt file contains necessary dependencies for execution.
-  
+
+## Application Instructions
+When the application is run, the following interface will appear:
+  ![imagen](https://github.com/SusanaAlvarezC/ML2-Lab3-/assets/22481634/981ed985-75fd-4827-89e0-01728031af68)
+  ![imagen](https://github.com/SusanaAlvarezC/ML2-Lab3-/assets/22481634/62a66057-1d27-4d19-94f4-b919b3fb9a58)
+
+1. Read the story.
+2. Pose a question related to the text in the available textbox.
+3. Select the model of your choice.
+4. Click on "Get answer."
+
       
 
 
